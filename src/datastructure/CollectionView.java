@@ -18,6 +18,10 @@ public static void main(String[] args) {
         map.put(5, "San Jose");
         map.put(6, "Seattle");
 
+        Collection<String> values = map.values();
+        for (String value: values){
+                System.out.println(value);
+        }
 
 
     }
