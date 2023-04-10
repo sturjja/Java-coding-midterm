@@ -1,31 +1,89 @@
 Please answer the below Data Structure Questions:
+
 why do we need data structure?
-A.
+A. Data structures are tools that help to store and organize data efficiently. They are important for solving complex computational problems and optimizing algorithms.
+
 What are the various operations that can be performed on different Data Structures?
+A. Arrays can be searched, sorted, split, merged, and have elements inserted or deleted. Lists can be sorted, reversed, or updated, and elements can be added or removed. Queues and stacks can be iterated through, have elements added or removed, or have their size checked. Trees can be searched, balanced, or have nodes inserted or deleted. Graphs can have edges and vertices added or removed, traversed, or have their connectivity checked.
+
 List out the areas in which data structures are applied extensively?
+A.Data structures are used in fields such as algorithms, databases, operating systems, networking, artificial intelligence and machine learning, computer graphics, computational biology, and financial analysis.
+
 what is an Array?
+A. Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+
 what is the difference between the Array and ArrayList?
+A. The difference between a built-in array and an ArrayList in Java, is that the size of an array cannot be modified (if you want to add or remove elements to/from an array, you have to create a new one). While elements can be added and removed from an ArrayList whenever you want.
+
 what is LinkedList?
+A.The LinkedList class is a collection which can contain many objects of the same type, just like the ArrayList.
+
 How is an Array different from Linked List?
+A. The LinkedList stores its items in containers. The list has a link to the first container and each container has a link to the next container in the list.
+
 what is queue?
+A. Queue is a data structure that implements the FIFO (First-In-First-Out) principle, where the first element added to the queue is the first one to be removed.
+
 what is stack?
+A. Stack is a data structure that allows data to be stored and retrieved in a last-in, first-out (LIFO) order.
+
 what is FIFO and LIFO?
+A. FIFO and LIFO are two ways to manage data in a data structure. FIFO, or "first in, first out," means that the first item added to a data structure is the first one to be removed. This is like a queue, where items are added to the back and removed from the front. LIFO, or "last in, first out," means that the last item added to a data structure is the first one to be removed. This is like a stack, where items are added to the top and removed from the top.
+
 what is the order of complexity?
+A. The order of complexity, is a measure of how much time an algorithm takes to run as the input size grows. It is typically expressed using big O notation.
+
 what is the best case to search an element from an array?
+A. When the element to be searched is located at the beginning of the array, it is considered the best case. In this scenario, the time required to find the element is constant and not dependent on the size of the array, which is represented by O(1) notation.
+
 what is the worst case to search an element from an array?
+A. The worst case to search an element from an array is when the element being searched is not present in the array or it is at the last index of the array.
+
 what is tree in data structure?
+A. In data structures, a tree is a hierarchical data structure consisting of nodes connected by edges.
+
 what is graph in data structure?
+A. In data structures, a graph is a non-linear data structure consisting of nodes and edges that connect them.
+
 what is the difference between the HashTable and HashMap?
+A. The main differences between HashTable and HashMap are: HashTable is synchronized and allows neither null keys nor values, while HashMap is not synchronized and allows one null key and any number of null values. HashTable does not guarantee any iteration order, while HashMap provides a predictable order when iterating over its elements using specific methods. HashMap generally performs better than HashTable because of the additional overhead caused by HashTable's synchronization.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A. In RDBMS, the data is stored in tables using the Relational Data Model. Network Data Model represents data as a collection of records connected to one another through links. The Network Model is the major data structure used in the Network Data Model. In the Hierarchical Data Model, the data is stored in a tree structure where nodes are connected through parent-child relationships. Therefore, the Tree Structure is the major data structure used in the Hierarchical Data Model.
+
 How HashMap works in java?
+A.  A HashMap however, store items in "key/value" pairs, and you can access them by an index of another type (e.g. a String).
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A. ArrayIndexOutOfBoundsException is a Java exception that occurs when trying to access an element of an array with an invalid index value. The index value should be within the valid index range of the array, which is from 0 to length-1.
+
 What are the different ways of copying an array into another array?
+A. Different ways of copying an array into another array include using a for loop, System.arraycopy(), Arrays.copyOf(), clone() method, and Arrays.copyOfRange().
+
 What is difference between an array and a linked list?
+A. The LinkedList stores its items in containers. The list has a link to the first container and each container has a link to the next container in the list.
+
 What is DFS and BFS?
+A. DFS and BFS are algorithms for traversing graphs or trees. DFS, which stands for Depth-First Search, explores as far as possible along each branch before backtracking, using a stack to keep track of nodes to be visited. BFS, which stands for Breadth-First Search, explores all the neighboring nodes at the current depth before moving on to the nodes at the next depth level, using a queue to keep track of nodes to be visited.
+
 What is Recursion?
+A. Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
+
 What are linear and non linear data Structures?
+A. Linear data structures consist of data elements arranged sequentially, where each element has a unique predecessor and successor, except the first and last elements. Examples include arrays, linked lists, stacks, and queues. Non-linear data structures have data elements arranged non-sequentially and can have one or more predecessors and successors, creating complex relationships between data elements.
+
 What is Big-(O)-notation?
+A. In Big-O notation, the runtime of an algorithm is expressed as a function of the input size, typically denoted as "n". It is used to analyze how the runtime of an algorithm grows as the input size increases.
+
 Outlined different kind of sorting algorithm with time complexity?
+A.
+Bubble Sort: compares adjacent elements and swaps them if they are not in order. Time complexity is O(n^2).
+Selection Sort: selects the minimum element from the unsorted part of the array and places it at the beginning of the array. Time complexity is O(n^2).
+Insertion Sort: sorts the array by inserting each element at the right position in the already sorted part of the array. Time complexity is O(n^2).
+Quick Sort: uses a divide and conquer approach to sort the array. Time complexity is O(n log n).
+Merge Sort: uses a divide and conquer approach. Time complexity is O(n log n).
+Heap Sort: creates a binary heap of the elements and repeatedly extracts the minimum element from the heap and adding it to the sorted part of the array. Time complexity is O(n log n).
+Radix Sort: sorts the array by considering the digits in each element. Time complexity is O(dn), where d is the number of digits in the maximum element.
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
