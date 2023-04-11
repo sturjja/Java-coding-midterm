@@ -19,9 +19,9 @@ public class EmployeeInfo {
 
 	/*
 	 * declare few static and final fields and some non-static fields
-	 */
+	  */
 	static String companyName;
-	
+	//q
 	/*
 	 * You must implement the logic for below 2 methods and 
 	 * following 2 methods are prototype as well for other methods need to be design,
