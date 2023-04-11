@@ -1,5 +1,13 @@
 package algorithm;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+
 public class Sort {
 
     long executionTime = 0;
@@ -8,6 +16,25 @@ public class Sort {
 	 * Store all the sorted data into one of the databases.
 	 */
 
+    public static Properties loadProperties() throws IOException {
+        Properties prop = new Properties();
+        InputStream ism = new FileInputStream("C:\\Users\\sturj\\Java Mid\\midterm-coding-exam\\midterm-coding-exam\\src\\secret.properties");
+        prop.load(ism);
+        ism.close();
+        return prop;
+    }
+
+    public static Connection connectToSqlDatabase() throws IOException, SQLException, ClassNotFoundException {
+        Properties prop = loadProperties();
+        String driverClass = prop.getProperty("MYSQLJDBC.driver");
+        String url = prop.getProperty("MYSQLJDBC.url");
+        String userName = prop.getProperty("MYSQLJDBC.userName");
+        String password = prop.getProperty("MYSQLJDBC.password");
+        Class.forName(driverClass);
+        Connection connect = DriverManager.getConnection(url, userName, password);
+        System.out.println("Database is connected");
+        return connect;
+    }
 
     public int[] selectionSort(int [] array){
         final long startTime = System.currentTimeMillis();

@@ -18,7 +18,7 @@ public class ConnectToSqlDB {
 
     public static Properties loadProperties() throws IOException{
         Properties prop = new Properties();
-        InputStream ism = new FileInputStream("src/secret.properties");
+        InputStream ism = new FileInputStream("C:\\Users\\sturj\\Java Mid\\midterm-coding-exam\\midterm-coding-exam\\src\\secret.properties");
         prop.load(ism);
         ism.close();
         return prop;
